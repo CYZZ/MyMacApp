@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="14868"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -676,7 +673,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MyMacApp" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -691,7 +688,6 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="480" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -707,57 +703,15 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="MyMacApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeS-ch-giK">
-                                <rect key="frame" x="0.0" y="10" width="480" height="160"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-X8-O7E">
-                                <rect key="frame" x="5" y="244" width="395" height="21"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="http://" placeholderString="网页链接" drawsBackground="YES" id="2rU-8t-qQg">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3hm-Zj-TON">
-                                <rect key="frame" x="404" y="237" width="67" height="32"/>
-                                <buttonCell key="cell" type="push" title="访问" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pIM-qZ-3vK">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="buttonClick:" target="XfG-lQ-9wD" id="pHJ-5w-tVa"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="kfd-X8-O7E" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="JHe-fB-MdK"/>
-                            <constraint firstItem="WeS-ch-giK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="Q0X-1I-BNd"/>
-                            <constraint firstAttribute="trailing" secondItem="3hm-Zj-TON" secondAttribute="trailing" constant="15" id="Rod-Ih-sod"/>
-                            <constraint firstItem="3hm-Zj-TON" firstAttribute="leading" secondItem="kfd-X8-O7E" secondAttribute="trailing" constant="10" id="Ryp-iK-Ko9"/>
-                            <constraint firstItem="3hm-Zj-TON" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="5" id="ckG-Y2-yFL"/>
-                            <constraint firstAttribute="bottom" secondItem="WeS-ch-giK" secondAttribute="bottom" constant="10" id="f5n-HB-cZK"/>
-                            <constraint firstItem="WeS-ch-giK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="hg5-Qd-shP"/>
-                            <constraint firstItem="kfd-X8-O7E" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="5" id="loU-p2-mQc"/>
-                            <constraint firstAttribute="trailing" secondItem="WeS-ch-giK" secondAttribute="trailing" id="qOt-dg-0R8"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="myWebView" destination="WeS-ch-giK" id="HnZ-jF-gVT"/>
-                        <outlet property="urlTextField" destination="kfd-X8-O7E" id="hxM-I9-75s"/>
-                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="648"/>
+            <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
 </document>

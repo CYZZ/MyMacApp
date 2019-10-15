@@ -7,72 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F172757234ED41000452676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F172756234ED41000452676 /* AppDelegate.swift */; };
-		5F172759234ED41000452676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F172758234ED41000452676 /* ViewController.swift */; };
-		5F17275B234ED41300452676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F17275A234ED41300452676 /* Assets.xcassets */; };
-		5F17275E234ED41300452676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F17275C234ED41300452676 /* Main.storyboard */; };
+		0D367D8BA8DEDE454041306A /* Pods_MyMacApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */; };
+		5F16D78823556A5700CB0BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F16D78723556A5700CB0BBD /* AppDelegate.swift */; };
+		5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F16D78923556A5700CB0BBD /* ViewController.swift */; };
+		5F16D78C23556A5800CB0BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F16D78B23556A5800CB0BBD /* Assets.xcassets */; };
+		5F16D78F23556A5800CB0BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16D78D23556A5800CB0BBD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F172753234ED41000452676 /* MyMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F172756234ED41000452676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F172758234ED41000452676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F17275A234ED41300452676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F17275D234ED41300452676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F17275F234ED41300452676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F172760234ED41300452676 /* MyMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMacApp.entitlements; sourceTree = "<group>"; };
+		06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMacApp.debug.xcconfig"; path = "Target Support Files/Pods-MyMacApp/Pods-MyMacApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMacApp.release.xcconfig"; path = "Target Support Files/Pods-MyMacApp/Pods-MyMacApp.release.xcconfig"; sourceTree = "<group>"; };
+		5F16D78423556A5700CB0BBD /* MyMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F16D78723556A5700CB0BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F16D78923556A5700CB0BBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F16D78B23556A5800CB0BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F16D78E23556A5800CB0BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F16D79023556A5800CB0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMacApp.entitlements; sourceTree = "<group>"; };
+		B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F172750234ED41000452676 /* Frameworks */ = {
+		5F16D78123556A5700CB0BBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D367D8BA8DEDE454041306A /* Pods_MyMacApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F17274A234ED41000452676 = {
+		463E654655D0C849FD75B62C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F172755234ED41000452676 /* MyMacApp */,
-				5F172754234ED41000452676 /* Products */,
+				B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F16D77B23556A5700CB0BBD = {
+			isa = PBXGroup;
+			children = (
+				5F16D78623556A5700CB0BBD /* MyMacApp */,
+				5F16D78523556A5700CB0BBD /* Products */,
+				BD1101FDBED15BAEC6931FA6 /* Pods */,
+				463E654655D0C849FD75B62C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5F172754234ED41000452676 /* Products */ = {
+		5F16D78523556A5700CB0BBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F172753234ED41000452676 /* MyMacApp.app */,
+				5F16D78423556A5700CB0BBD /* MyMacApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F172755234ED41000452676 /* MyMacApp */ = {
+		5F16D78623556A5700CB0BBD /* MyMacApp */ = {
 			isa = PBXGroup;
 			children = (
-				5F172756234ED41000452676 /* AppDelegate.swift */,
-				5F172758234ED41000452676 /* ViewController.swift */,
-				5F17275A234ED41300452676 /* Assets.xcassets */,
-				5F17275C234ED41300452676 /* Main.storyboard */,
-				5F17275F234ED41300452676 /* Info.plist */,
-				5F172760234ED41300452676 /* MyMacApp.entitlements */,
+				5F16D78723556A5700CB0BBD /* AppDelegate.swift */,
+				5F16D78923556A5700CB0BBD /* ViewController.swift */,
+				5F16D78B23556A5800CB0BBD /* Assets.xcassets */,
+				5F16D78D23556A5800CB0BBD /* Main.storyboard */,
+				5F16D79023556A5800CB0BBD /* Info.plist */,
+				5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */,
 			);
 			path = MyMacApp;
+			sourceTree = "<group>";
+		};
+		BD1101FDBED15BAEC6931FA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */,
+				5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F172752234ED41000452676 /* MyMacApp */ = {
+		5F16D78323556A5700CB0BBD /* MyMacApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F172763234ED41300452676 /* Build configuration list for PBXNativeTarget "MyMacApp" */;
+			buildConfigurationList = 5F16D79423556A5800CB0BBD /* Build configuration list for PBXNativeTarget "MyMacApp" */;
 			buildPhases = (
-				5F17274F234ED41000452676 /* Sources */,
-				5F172750234ED41000452676 /* Frameworks */,
-				5F172751234ED41000452676 /* Resources */,
+				9CC69A9B08F0DE30DF1250F0 /* [CP] Check Pods Manifest.lock */,
+				5F16D78023556A5700CB0BBD /* Sources */,
+				5F16D78123556A5700CB0BBD /* Frameworks */,
+				5F16D78223556A5700CB0BBD /* Resources */,
+				3D1BCBF16DADB603008B0B78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -80,25 +107,25 @@
 			);
 			name = MyMacApp;
 			productName = MyMacApp;
-			productReference = 5F172753234ED41000452676 /* MyMacApp.app */;
+			productReference = 5F16D78423556A5700CB0BBD /* MyMacApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5F17274B234ED41000452676 /* Project object */ = {
+		5F16D77C23556A5700CB0BBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = chiyz;
 				TargetAttributes = {
-					5F172752234ED41000452676 = {
+					5F16D78323556A5700CB0BBD = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = 5F17274E234ED41000452676 /* Build configuration list for PBXProject "MyMacApp" */;
+			buildConfigurationList = 5F16D77F23556A5700CB0BBD /* Build configuration list for PBXProject "MyMacApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,45 +133,87 @@
 				en,
 				Base,
 			);
-			mainGroup = 5F17274A234ED41000452676;
-			productRefGroup = 5F172754234ED41000452676 /* Products */;
+			mainGroup = 5F16D77B23556A5700CB0BBD;
+			productRefGroup = 5F16D78523556A5700CB0BBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F172752234ED41000452676 /* MyMacApp */,
+				5F16D78323556A5700CB0BBD /* MyMacApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5F172751234ED41000452676 /* Resources */ = {
+		5F16D78223556A5700CB0BBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F17275B234ED41300452676 /* Assets.xcassets in Resources */,
-				5F17275E234ED41300452676 /* Main.storyboard in Resources */,
+				5F16D78C23556A5800CB0BBD /* Assets.xcassets in Resources */,
+				5F16D78F23556A5800CB0BBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D1BCBF16DADB603008B0B78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMacApp/Pods-MyMacApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMacApp/Pods-MyMacApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMacApp/Pods-MyMacApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC69A9B08F0DE30DF1250F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMacApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		5F17274F234ED41000452676 /* Sources */ = {
+		5F16D78023556A5700CB0BBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F172759234ED41000452676 /* ViewController.swift in Sources */,
-				5F172757234ED41000452676 /* AppDelegate.swift in Sources */,
+				5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */,
+				5F16D78823556A5700CB0BBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5F17275C234ED41300452676 /* Main.storyboard */ = {
+		5F16D78D23556A5800CB0BBD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5F17275D234ED41300452676 /* Base */,
+				5F16D78E23556A5800CB0BBD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -152,7 +221,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5F172761234ED41300452676 /* Debug */ = {
+		5F16D79223556A5800CB0BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		5F172762234ED41300452676 /* Release */ = {
+		5F16D79323556A5800CB0BBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,8 +334,9 @@
 			};
 			name = Release;
 		};
-		5F172764234ED41300452676 /* Debug */ = {
+		5F16D79523556A5800CB0BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyMacApp/MyMacApp.entitlements;
@@ -277,15 +347,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		5F172765234ED41300452676 /* Release */ = {
+		5F16D79623556A5800CB0BBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyMacApp/MyMacApp.entitlements;
@@ -296,7 +366,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -306,25 +375,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F17274E234ED41000452676 /* Build configuration list for PBXProject "MyMacApp" */ = {
+		5F16D77F23556A5700CB0BBD /* Build configuration list for PBXProject "MyMacApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F172761234ED41300452676 /* Debug */,
-				5F172762234ED41300452676 /* Release */,
+				5F16D79223556A5800CB0BBD /* Debug */,
+				5F16D79323556A5800CB0BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F172763234ED41300452676 /* Build configuration list for PBXNativeTarget "MyMacApp" */ = {
+		5F16D79423556A5800CB0BBD /* Build configuration list for PBXNativeTarget "MyMacApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F172764234ED41300452676 /* Debug */,
-				5F172765234ED41300452676 /* Release */,
+				5F16D79523556A5800CB0BBD /* Debug */,
+				5F16D79623556A5800CB0BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5F17274B234ED41000452676 /* Project object */;
+	rootObject = 5F16D77C23556A5700CB0BBD /* Project object */;
 }
