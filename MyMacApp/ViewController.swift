@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SnapKit
 
 class ViewController: NSViewController {
 
@@ -22,6 +23,25 @@ class ViewController: NSViewController {
 		}
 	}
 
+	@IBAction func buttonClick(_ sender: NSButton) {
+		self.presentAsModalWindow(MyWYNewsController())
+//		self.present(MyWYNewsController(), animator: self)
+//		self.animatePresentation(of: MyWYNewsController(), from: self)
+//		self.presentAsSheet(MyWYNewsController())
+//		self.preferredContentSizeDidChange(for: MyWYNewsController())
+//		NSApplication.shared.keyWindow.show
+		
+	}
+}
 
+extension ViewController:NSViewControllerPresentationAnimator {
+	func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
+		
+	}
+	
+	func animateDismissal(of viewController: NSViewController, from fromViewController: NSViewController) {
+		
+	}
+	
 }
 

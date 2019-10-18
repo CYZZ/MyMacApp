@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,16 @@
 		5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F16D78923556A5700CB0BBD /* ViewController.swift */; };
 		5F16D78C23556A5800CB0BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F16D78B23556A5800CB0BBD /* Assets.xcassets */; };
 		5F16D78F23556A5800CB0BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16D78D23556A5800CB0BBD /* Main.storyboard */; };
+		5F23A6182356F00600BAA763 /* WYNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23A6172356F00600BAA763 /* WYNewsView.swift */; };
+		5F23A61A2356F18500BAA763 /* WYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23A6192356F18500BAA763 /* WYNetWorkManager.swift */; };
+		5F2D4CBD23571F4000386188 /* WYNewsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D4CBC23571F4000386188 /* WYNewsListModel.swift */; };
+		5F5DADFC23580F5A0065474A /* WYCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DADFB23580F590065474A /* WYCellView.swift */; };
+		5F5DADFE2358553A0065474A /* WYNewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DADFD2358553A0065474A /* WYNewsDetailViewModel.swift */; };
+		5F5DAE0023585C300065474A /* WYNewsDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DADFF23585C300065474A /* WYNewsDetailEntity.swift */; };
+		5F5DAE022358719F0065474A /* WYNewsDeitailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DAE012358719F0065474A /* WYNewsDeitailVC.swift */; };
+		5F5DAE06235871CC0065474A /* WYDetialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DAE05235871CC0065474A /* WYDetialView.swift */; };
+		5F60FC5C2356EDAA00D4B55E /* WYListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60FC572356EDAA00D4B55E /* WYListDelegate.swift */; };
+		5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60FC592356EDAA00D4B55E /* MyWYNewsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		5F16D78E23556A5800CB0BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F16D79023556A5800CB0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMacApp.entitlements; sourceTree = "<group>"; };
+		5F23A6172356F00600BAA763 /* WYNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNewsView.swift; sourceTree = "<group>"; };
+		5F23A6192356F18500BAA763 /* WYNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNetWorkManager.swift; sourceTree = "<group>"; };
+		5F2D4CBC23571F4000386188 /* WYNewsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNewsListModel.swift; sourceTree = "<group>"; };
+		5F5DADFB23580F590065474A /* WYCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYCellView.swift; sourceTree = "<group>"; };
+		5F5DADFD2358553A0065474A /* WYNewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNewsDetailViewModel.swift; sourceTree = "<group>"; };
+		5F5DADFF23585C300065474A /* WYNewsDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNewsDetailEntity.swift; sourceTree = "<group>"; };
+		5F5DAE012358719F0065474A /* WYNewsDeitailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYNewsDeitailVC.swift; sourceTree = "<group>"; };
+		5F5DAE05235871CC0065474A /* WYDetialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYDetialView.swift; sourceTree = "<group>"; };
+		5F60FC572356EDAA00D4B55E /* WYListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYListDelegate.swift; sourceTree = "<group>"; };
+		5F60FC592356EDAA00D4B55E /* MyWYNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWYNewsController.swift; sourceTree = "<group>"; };
 		B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +90,9 @@
 			children = (
 				5F16D78723556A5700CB0BBD /* AppDelegate.swift */,
 				5F16D78923556A5700CB0BBD /* ViewController.swift */,
+				5F60FC582356EDAA00D4B55E /* Controller */,
+				5F60FC562356EDAA00D4B55E /* Model */,
+				5F60FC5A2356EDAA00D4B55E /* View */,
 				5F16D78B23556A5800CB0BBD /* Assets.xcassets */,
 				5F16D78D23556A5800CB0BBD /* Main.storyboard */,
 				5F16D79023556A5800CB0BBD /* Info.plist */,
@@ -78,13 +101,43 @@
 			path = MyMacApp;
 			sourceTree = "<group>";
 		};
+		5F60FC562356EDAA00D4B55E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F60FC572356EDAA00D4B55E /* WYListDelegate.swift */,
+				5F23A6192356F18500BAA763 /* WYNetWorkManager.swift */,
+				5F2D4CBC23571F4000386188 /* WYNewsListModel.swift */,
+				5F5DADFF23585C300065474A /* WYNewsDetailEntity.swift */,
+				5F5DADFD2358553A0065474A /* WYNewsDetailViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F60FC582356EDAA00D4B55E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F60FC592356EDAA00D4B55E /* MyWYNewsController.swift */,
+				5F5DAE012358719F0065474A /* WYNewsDeitailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F60FC5A2356EDAA00D4B55E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F23A6172356F00600BAA763 /* WYNewsView.swift */,
+				5F5DADFB23580F590065474A /* WYCellView.swift */,
+				5F5DAE05235871CC0065474A /* WYDetialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BD1101FDBED15BAEC6931FA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */,
 				5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,7 +255,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F60FC5C2356EDAA00D4B55E /* WYListDelegate.swift in Sources */,
 				5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */,
+				5F23A6182356F00600BAA763 /* WYNewsView.swift in Sources */,
+				5F5DAE06235871CC0065474A /* WYDetialView.swift in Sources */,
+				5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */,
+				5F2D4CBD23571F4000386188 /* WYNewsListModel.swift in Sources */,
+				5F23A61A2356F18500BAA763 /* WYNetWorkManager.swift in Sources */,
+				5F5DAE022358719F0065474A /* WYNewsDeitailVC.swift in Sources */,
+				5F5DADFE2358553A0065474A /* WYNewsDetailViewModel.swift in Sources */,
+				5F5DADFC23580F5A0065474A /* WYCellView.swift in Sources */,
+				5F5DAE0023585C300065474A /* WYNewsDetailEntity.swift in Sources */,
 				5F16D78823556A5700CB0BBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

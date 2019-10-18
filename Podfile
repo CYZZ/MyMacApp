@@ -6,7 +6,8 @@ target 'MyMacApp' do
   use_frameworks!
 	pod 'Alamofire', '~> 5.0.0-rc.2'
 	pod 'SnapKit', '~>5.0.1'
-
+	pod 'Kingfisher'
+	pod 'HandyJSON'
   # Pods for MyMacApp
 
 end
