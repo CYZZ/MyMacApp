@@ -32,6 +32,20 @@ class ViewController: NSViewController {
 //		NSApplication.shared.keyWindow.show
 		
 	}
+	@IBAction func alertButtonClick(_ sender: NSButton) {
+//		let alert = NSAlert()
+//		alert.addButton(withTitle: "OK")
+//		alert.messageText = "Hello World!"
+//		// 描述性文字
+//		alert.informativeText = "this is my first MAC app"
+//
+//		alert.beginSheetModal(for: self.view.window!) { (responCode) in
+//			print("responCode = \(responCode)")
+//		}
+		self.presentAsModalWindow(MyTabVC())
+	}
+	
+	
 }
 
 extension ViewController:NSViewControllerPresentationAnimator {

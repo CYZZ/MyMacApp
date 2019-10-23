@@ -54,7 +54,6 @@ class WYNetWorkManager: NSObject {
 		
 	}
 	
-	
 	/// 发起网络请求
 	/// - Parameter url: 请求连接
 	/// - Parameter method: 请求方法
