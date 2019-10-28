@@ -44,6 +44,9 @@ class ViewController: NSViewController {
 //		}
 		self.presentAsModalWindow(MyTabVC())
 	}
+	@IBAction func qrCodeClick(_ sender: NSButton) {
+		self.presentAsModalWindow(MyQRCodeVC())
+	}
 	
 	
 }
