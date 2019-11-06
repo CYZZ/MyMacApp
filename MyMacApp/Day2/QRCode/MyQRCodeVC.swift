@@ -99,6 +99,8 @@ class MyQRCodeVC: NSViewController {
 			make.width.height.equalTo(300)
 		}
 		
+//		self.view.addSubview(MyContentView())
+		
 	}
 	@objc func buttonClick() {
 		print("点击了按钮")

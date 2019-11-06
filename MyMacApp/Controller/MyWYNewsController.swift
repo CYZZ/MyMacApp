@@ -31,7 +31,7 @@ class MyWYNewsController: NSViewController {
 //			self?.wyNewsView.reloadDataWith(newsModel.items,callBack: self?.didSelecRow)
 			self?.wyNewsView.reloadDataWith(newsModel.items, callBack: { (row, model) in
 				
-				let detailVC = WYNewsDeitailVC()
+				let detailVC   = WYNewsDeitailVC()
 				self?.presentAsModalWindow(detailVC)
 				let htmlString = WYNewsDetailViewModel().convertHtmlString(model: model)
 				detailVC.detailView.reloadWebViewWith(htmlString)

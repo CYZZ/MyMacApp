@@ -13,14 +13,14 @@ class WYNewsView: NSView {
 	let mydelegate = WYListDelegate()
 	
 	lazy var tableView: NSTableView = {
-		let table = NSTableView.init(frame: NSRect.init(x: 0, y: 0, width: 400, height: 400))
+		let table        = NSTableView.init(frame: NSRect.init(x: 0, y: 0, width: 400, height: 400))
 		let dataDelegate = mydelegate
 		// 需要保存实例才能进行
-		table.delegate = dataDelegate
+		table.delegate   = dataDelegate
 		table.dataSource = dataDelegate
 		
-		let column1 = NSTableColumn.init(identifier: NSUserInterfaceItemIdentifier(rawValue: "column1"))
-		column1.title = "标题1"
+		let column1      = NSTableColumn.init(identifier: NSUserInterfaceItemIdentifier(rawValue: "column1"))
+		column1.title    = "标题1"
 		column1.minWidth = 300
 		table.addTableColumn(column1)
 		

@@ -26,6 +26,9 @@
 		5F8B3CD5235EEC7A00EEBF21 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */; };
 		5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */; };
 		5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */; };
+		5FD56D7A23681E0500B07120 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7923681E0500B07120 /* MyContentView.swift */; };
+		5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7B2368283200B07120 /* MYtest3Controller.swift */; };
+		5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeVC.swift; sourceTree = "<group>"; };
+		5FD56D7923681E0500B07120 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
+		5FD56D7B2368283200B07120 /* MYtest3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYtest3Controller.swift; sourceTree = "<group>"; };
+		5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogetherSwiftUIView.swift; sourceTree = "<group>"; };
 		B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 				5F16D78B23556A5800CB0BBD /* Assets.xcassets */,
 				5F8B3CD2235EEB7A00EEBF21 /* Day1 */,
 				5F8C28BA236026FC008068F5 /* Day2 */,
+				5FD56D7523681DB600B07120 /* Day3 */,
 				5F16D78D23556A5800CB0BBD /* Main.storyboard */,
 				5F16D79023556A5800CB0BBD /* Info.plist */,
 				5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */,
@@ -174,6 +181,40 @@
 				5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		5FD56D7523681DB600B07120 /* Day3 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD56D7823681DDA00B07120 /* Model */,
+				5FD56D7723681DD600B07120 /* View */,
+				5FD56D7623681DCF00B07120 /* Controller */,
+			);
+			path = Day3;
+			sourceTree = "<group>";
+		};
+		5FD56D7623681DCF00B07120 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FD56D7B2368283200B07120 /* MYtest3Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FD56D7723681DD600B07120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FD56D7923681E0500B07120 /* MyContentView.swift */,
+				5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FD56D7823681DDA00B07120 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BD1101FDBED15BAEC6931FA6 /* Pods */ = {
@@ -304,12 +345,15 @@
 				5F23A6182356F00600BAA763 /* WYNewsView.swift in Sources */,
 				5F5DAE06235871CC0065474A /* WYDetialView.swift in Sources */,
 				5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */,
+				5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */,
 				5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */,
 				5F8B3CD5235EEC7A00EEBF21 /* OneViewController.swift in Sources */,
 				5F2D4CBD23571F4000386188 /* WYNewsListModel.swift in Sources */,
 				5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */,
 				5F23A61A2356F18500BAA763 /* WYNetWorkManager.swift in Sources */,
 				5F5DAE022358719F0065474A /* WYNewsDeitailVC.swift in Sources */,
+				5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */,
+				5FD56D7A23681E0500B07120 /* MyContentView.swift in Sources */,
 				5F5DADFE2358553A0065474A /* WYNewsDetailViewModel.swift in Sources */,
 				5F5DADFC23580F5A0065474A /* WYCellView.swift in Sources */,
 				5F6269CB2359A2EC0092BCD9 /* MyTabVC.swift in Sources */,
@@ -458,6 +502,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -477,6 +522,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

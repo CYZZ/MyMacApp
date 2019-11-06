@@ -8,6 +8,7 @@
 
 import Cocoa
 import SnapKit
+import SwiftUI
 
 class ViewController: NSViewController {
 
@@ -46,6 +47,12 @@ class ViewController: NSViewController {
 	}
 	@IBAction func qrCodeClick(_ sender: NSButton) {
 		self.presentAsModalWindow(MyQRCodeVC())
+	}
+	
+	@IBAction func testSwiftUIClick(_ sender: Any) {
+//		let VC = NSHostingController(rootView: MyContentView())
+		let VC = MYtest3Controller()
+		self.presentAsModalWindow(VC)
 	}
 	
 	
