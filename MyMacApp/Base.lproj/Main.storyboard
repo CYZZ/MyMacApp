@@ -63,13 +63,11 @@
                                         <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
                                             <connections>
                                                 <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
-                                                <segue destination="dDn-18-Dud" kind="show" id="diO-EA-wC7"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                             <connections>
                                                 <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
-                                                <segue destination="B8D-0N-5wS" kind="show" id="yC9-hf-QFO"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open Recent" id="tXI-mr-wws">
@@ -702,41 +700,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="418"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="3Zt-Az-pgw">
-            <objects>
-                <windowController id="dDn-18-Dud" customClass="GoldWindowController" customModule="MyMacApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="wK1-Do-rg7">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="-1626" y="133" width="480" height="270"/>
-                        <rect key="screenRect" x="-1920" y="-180" width="1920" height="1057"/>
-                        <connections>
-                            <outlet property="delegate" destination="dDn-18-Dud" id="SH4-GX-q5Q"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="AQm-0o-AzI" kind="relationship" relationship="window.shadowedContentViewController" id="xQe-qY-VPi"/>
-                    </connections>
-                </windowController>
-                <customObject id="Ae5-vV-qFJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="312" y="434"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="uK5-gQ-Dxi">
-            <objects>
-                <viewController id="AQm-0o-AzI" sceneMemberID="viewController">
-                    <view key="view" id="YD7-NL-TkR">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="YJH-XX-Rla" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="312" y="847"/>
+            <point key="canvasLocation" x="75" y="250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -807,28 +771,16 @@
                                     <action selector="testSwiftUIClick:" target="XfG-lQ-9wD" id="xkg-4S-lUA"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wjv-Oi-IJi">
-                                <rect key="frame" x="371" y="222" width="95" height="32"/>
-                                <buttonCell key="cell" type="push" title="获取gold" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="j1A-e0-YbV">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="showGoldWindow:" target="XfG-lQ-9wD" id="fwW-aC-Zbw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="46q-7z-Rrs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="1zH-Uf-plE"/>
                             <constraint firstItem="46q-7z-Rrs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="IJm-Ov-OVb"/>
-                            <constraint firstItem="wjv-Oi-IJi" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="rZt-0f-XBd"/>
-                            <constraint firstAttribute="trailing" secondItem="wjv-Oi-IJi" secondAttribute="trailing" constant="20" id="swb-ZQ-e2S"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="831"/>
+            <point key="canvasLocation" x="75" y="654"/>
         </scene>
     </scenes>
 </document>
