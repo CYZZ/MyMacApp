@@ -54,7 +54,31 @@ class ViewController: NSViewController {
 		let VC = MYtest3Controller()
 		self.presentAsModalWindow(VC)
 	}
+	@IBAction func showGoldWindow(_ sender: NSButton) {
+//		let style = NSWindow.StyleMask.closable | NSWindow.StyleMask.miniaturizable | NSWindow.StyleMask.resizable
+		let window = NSWindow.init(contentRect: CGRect(x: 100, y: 100, width: 400, height: 400), styleMask: [.resizable,.miniaturizable,.closable,.titled], backing: .buffered, defer: true)
+		window.title = "数据详情"
+		window.titleVisibility = .visible
+		window.center()
+		window.maxSize = NSSize(width: 700, height: 600)
+		window.minSize = NSSize(width: 200, height: 200)
+		
+		print("hasTItleBar = \(window.hasTitleBar)")
+		let goldWinC = GoldWindowController()
+		goldWinC.window = window
+		
+		let goldVC = GoldViewController()
+		window.contentViewController = goldVC
+		
+//		window.orderFront(self.view.window)
+		window.makeKeyAndOrderFront(nil)
+		self.view.window?.close()
+		
+	}
 	
+	deinit {
+		print("ViewController deinit")
+	}
 	
 }
 

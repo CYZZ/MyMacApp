@@ -23,6 +23,11 @@
 		5F60FC5C2356EDAA00D4B55E /* WYListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60FC572356EDAA00D4B55E /* WYListDelegate.swift */; };
 		5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60FC592356EDAA00D4B55E /* MyWYNewsController.swift */; };
 		5F6269CB2359A2EC0092BCD9 /* MyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6269CA2359A2EC0092BCD9 /* MyTabVC.swift */; };
+		5F6B41A42410A6EE0011B9C7 /* GoldWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B41A32410A6EE0011B9C7 /* GoldWindowController.swift */; };
+		5F6B41A62410A7050011B9C7 /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B41A52410A7050011B9C7 /* GoldViewController.swift */; };
+		5F6B41A82410A7710011B9C7 /* GoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B41A72410A7710011B9C7 /* GoldModel.swift */; };
+		5F6B41AA2410A7840011B9C7 /* GoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B41A92410A7840011B9C7 /* GoldView.swift */; };
+		5F6B41AC2410C7BC0011B9C7 /* GoldManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B41AB2410C7BC0011B9C7 /* GoldManager.swift */; };
 		5F8B3CD5235EEC7A00EEBF21 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */; };
 		5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */; };
 		5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */; };
@@ -52,13 +57,21 @@
 		5F60FC572356EDAA00D4B55E /* WYListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYListDelegate.swift; sourceTree = "<group>"; };
 		5F60FC592356EDAA00D4B55E /* MyWYNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWYNewsController.swift; sourceTree = "<group>"; };
 		5F6269CA2359A2EC0092BCD9 /* MyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC.swift; sourceTree = "<group>"; };
+		5F6B41A32410A6EE0011B9C7 /* GoldWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldWindowController.swift; sourceTree = "<group>"; };
+		5F6B41A52410A7050011B9C7 /* GoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
+		5F6B41A72410A7710011B9C7 /* GoldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldModel.swift; sourceTree = "<group>"; };
+		5F6B41A92410A7840011B9C7 /* GoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldView.swift; sourceTree = "<group>"; };
+		5F6B41AB2410C7BC0011B9C7 /* GoldManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldManager.swift; sourceTree = "<group>"; };
 		5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeVC.swift; sourceTree = "<group>"; };
 		5FD56D7923681E0500B07120 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
 		5FD56D7B2368283200B07120 /* MYtest3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYtest3Controller.swift; sourceTree = "<group>"; };
 		5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogetherSwiftUIView.swift; sourceTree = "<group>"; };
+		9A10939FE67DCB9862283ADC /* Pods_MyIPhoneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIPhoneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D120D18CE153CEC41250BE7C /* Pods-MyIPhoneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIPhoneApp.release.xcconfig"; path = "Target Support Files/Pods-MyIPhoneApp/Pods-MyIPhoneApp.release.xcconfig"; sourceTree = "<group>"; };
+		F051E45A3618BF9FADB6FAED /* Pods-MyIPhoneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIPhoneApp.debug.xcconfig"; path = "Target Support Files/Pods-MyIPhoneApp/Pods-MyIPhoneApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A8F42EFDAD3075CB9ABDB5 /* Pods_MyMacApp.framework */,
+				9A10939FE67DCB9862283ADC /* Pods_MyIPhoneApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +125,7 @@
 				5F8B3CD2235EEB7A00EEBF21 /* Day1 */,
 				5F8C28BA236026FC008068F5 /* Day2 */,
 				5FD56D7523681DB600B07120 /* Day3 */,
+				5F6B419F2410A68B0011B9C7 /* Day4 */,
 				5F16D78D23556A5800CB0BBD /* Main.storyboard */,
 				5F16D79023556A5800CB0BBD /* Info.plist */,
 				5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */,
@@ -145,6 +160,42 @@
 				5F23A6172356F00600BAA763 /* WYNewsView.swift */,
 				5F5DADFB23580F590065474A /* WYCellView.swift */,
 				5F5DAE05235871CC0065474A /* WYDetialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F6B419F2410A68B0011B9C7 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				5F6B41A22410A6BB0011B9C7 /* View */,
+				5F6B41A12410A6B60011B9C7 /* Model */,
+				5F6B41A02410A6AF0011B9C7 /* Controller */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
+		5F6B41A02410A6AF0011B9C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F6B41A32410A6EE0011B9C7 /* GoldWindowController.swift */,
+				5F6B41A52410A7050011B9C7 /* GoldViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F6B41A12410A6B60011B9C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F6B41A72410A7710011B9C7 /* GoldModel.swift */,
+				5F6B41AB2410C7BC0011B9C7 /* GoldManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F6B41A22410A6BB0011B9C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F6B41A92410A7840011B9C7 /* GoldView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +273,8 @@
 			children = (
 				06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */,
 				5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */,
+				F051E45A3618BF9FADB6FAED /* Pods-MyIPhoneApp.debug.xcconfig */,
+				D120D18CE153CEC41250BE7C /* Pods-MyIPhoneApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -254,7 +307,7 @@
 		5F16D77C23556A5700CB0BBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = chiyz;
 				TargetAttributes = {
@@ -345,11 +398,15 @@
 				5F23A6182356F00600BAA763 /* WYNewsView.swift in Sources */,
 				5F5DAE06235871CC0065474A /* WYDetialView.swift in Sources */,
 				5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */,
+				5F6B41A82410A7710011B9C7 /* GoldModel.swift in Sources */,
+				5F6B41A62410A7050011B9C7 /* GoldViewController.swift in Sources */,
+				5F6B41AA2410A7840011B9C7 /* GoldView.swift in Sources */,
 				5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */,
 				5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */,
 				5F8B3CD5235EEC7A00EEBF21 /* OneViewController.swift in Sources */,
 				5F2D4CBD23571F4000386188 /* WYNewsListModel.swift in Sources */,
 				5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */,
+				5F6B41AC2410C7BC0011B9C7 /* GoldManager.swift in Sources */,
 				5F23A61A2356F18500BAA763 /* WYNetWorkManager.swift in Sources */,
 				5F5DAE022358719F0065474A /* WYNewsDeitailVC.swift in Sources */,
 				5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */,
@@ -359,6 +416,7 @@
 				5F6269CB2359A2EC0092BCD9 /* MyTabVC.swift in Sources */,
 				5F5DAE0023585C300065474A /* WYNewsDetailEntity.swift in Sources */,
 				5F16D78823556A5700CB0BBD /* AppDelegate.swift in Sources */,
+				5F6B41A42410A6EE0011B9C7 /* GoldWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -522,7 +580,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

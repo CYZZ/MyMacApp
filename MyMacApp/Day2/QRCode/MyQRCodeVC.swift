@@ -13,7 +13,7 @@ class MyQRCodeVC: NSViewController {
 	
 	lazy var imageV: NSImageView = {
 		let imageV = NSImageView()
-		imageV.contentTintColor = .lightGray
+//		imageV.contentTintColor = .lightGray
 		return imageV
 	}()
 	
