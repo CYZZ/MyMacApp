@@ -63,11 +63,13 @@
                                         <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
                                             <connections>
                                                 <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
+                                                <segue destination="oYi-2X-C5G" kind="show" id="11F-PY-vcP"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                             <connections>
                                                 <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
+                                                <segue destination="B8D-0N-5wS" kind="show" id="vGi-DW-0ZD"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open Recent" id="tXI-mr-wws">
@@ -679,7 +681,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="240" y="0.0"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -700,7 +702,41 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-104" y="419"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="zco-KE-nui">
+            <objects>
+                <windowController id="oYi-2X-C5G" customClass="GoldWindowController" customModule="MyMacApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Tcr-Wb-9Iw">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="-1626" y="133" width="480" height="270"/>
+                        <rect key="screenRect" x="-1920" y="-180" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="oYi-2X-C5G" id="JPR-fa-gFh"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="qtX-lC-T5c" kind="relationship" relationship="window.shadowedContentViewController" id="WsX-yW-LWC"/>
+                    </connections>
+                </windowController>
+                <customObject id="0bu-JE-KNV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="419"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A0I-3x-4tj">
+            <objects>
+                <viewController id="qtX-lC-T5c" sceneMemberID="viewController">
+                    <view key="view" id="IvD-BS-c3a">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="AeF-uz-HZL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="809"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -771,16 +807,28 @@
                                     <action selector="testSwiftUIClick:" target="XfG-lQ-9wD" id="xkg-4S-lUA"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CKG-SS-6vm">
+                                <rect key="frame" x="387" y="222" width="95" height="32"/>
+                                <buttonCell key="cell" type="push" title="显示gold" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xGY-Ze-6I2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showGoldWindow:" target="XfG-lQ-9wD" id="CvY-HN-iGa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="46q-7z-Rrs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="1zH-Uf-plE"/>
                             <constraint firstItem="46q-7z-Rrs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="IJm-Ov-OVb"/>
+                            <constraint firstItem="CKG-SS-6vm" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Lkm-yC-ARA"/>
+                            <constraint firstAttribute="trailing" secondItem="CKG-SS-6vm" secondAttribute="trailing" constant="4" id="cA2-7B-s4z"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="654"/>
+            <point key="canvasLocation" x="-104" y="831"/>
         </scene>
     </scenes>
 </document>
