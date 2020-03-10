@@ -24,6 +24,7 @@ class GoldView: NSView {
 		self.gOpenValueLabel.stringValue = "\(model.open ?? 0)"
 		self.gCloseValueLabel.stringValue = "\(model.close ?? 0)"
 		
+		self.goldCandle.setCandleValue(model.mostHigh ?? 0, mostLow: model.mostLow ?? 0, open: model.open ?? 0, close: model.close ?? 0)
 		self.calculateRatio(model.close, silver: self._sildModel?.close)
 	}
 	/// 设置银模型
@@ -35,6 +36,7 @@ class GoldView: NSView {
 		self.sOpenValueLabel.stringValue = "\(model.open ?? 0)"
 		self.sCloseValueLabel.stringValue = "\(model.close ?? 0)"
 		
+		self.silverCandle.setCandleValue(model.mostHigh ?? 0, mostLow: model.mostLow ?? 0, open: model.open ?? 0, close: model.close ?? 0)
 		self.calculateRatio(self._goldModel?.close, silver: model.close)
 	}
 	
@@ -86,9 +88,13 @@ class GoldView: NSView {
 		self.addSubview(ratioDescLabel)
 		self.addSubview(ratioValueLabel)
 		
+		self.addSubview(goldCandle)
+		self.addSubview(silverCandle)
 		
 		self.gDetailLabel.isHidden = true
 		self.sDetailLabel.isHidden = true
+		self.goldCandle.isHidden = true
+		self.silverCandle.isHidden = true
 		
 		self.title1Label.snp.makeConstraints { (make) in
 			make.left.equalToSuperview().offset(10)
@@ -189,6 +195,18 @@ class GoldView: NSView {
 		self.ratioValueLabel.snp.makeConstraints { (make) in
 			make.left.equalTo(ratioDescLabel.snp.right).offset(10)
 			make.top.equalTo(ratioDescLabel)
+		}
+		
+		self.goldCandle.snp.makeConstraints { (make) in
+			make.top.equalTo(ratioDescLabel.snp.bottom).offset(20)
+			make.leading.equalToSuperview().offset(10)
+			make.width.equalTo(30)
+			make.height.equalTo(70)
+		}
+		
+		self.silverCandle.snp.makeConstraints { (make) in
+			make.top.width.height.equalTo(goldCandle)
+			make.left.equalTo(goldCandle.snp.right).offset(10)
 		}
 
 	}
@@ -326,6 +344,8 @@ class GoldView: NSView {
 	@objc func hideButtonClick(_ button:NSButton) {
 		self.gDetailLabel.isHidden = !self.gDetailLabel.isHidden
 		self.sDetailLabel.isHidden = !self.sDetailLabel.isHidden
+		self.goldCandle.isHidden = !self.goldCandle.isHidden
+		self.silverCandle.isHidden = !self.silverCandle.isHidden
 		if self.gDetailLabel.isHidden != true {
 			button.title = "隐藏详情"
 		} else {
@@ -333,6 +353,15 @@ class GoldView: NSView {
 		}
 	}
 	
+	lazy var goldCandle: CandleStick = {
+		let candle = CandleStick()
+		return candle
+	}()
+	
+	lazy var silverCandle: CandleStick = {
+		let candle = CandleStick()
+		return candle
+	}()
 
 	/// 创建通用的标签
 	func createNormalLabel(_ title : String?) -> NSTextField {

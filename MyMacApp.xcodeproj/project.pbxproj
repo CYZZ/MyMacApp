@@ -31,6 +31,7 @@
 		5F8B3CD5235EEC7A00EEBF21 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */; };
 		5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */; };
 		5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */; };
+		5F949F622417276000C7CDF1 /* CandleStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F949F612417276000C7CDF1 /* CandleStick.swift */; };
 		5FD56D7A23681E0500B07120 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7923681E0500B07120 /* MyContentView.swift */; };
 		5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7B2368283200B07120 /* MYtest3Controller.swift */; };
 		5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */; };
@@ -65,6 +66,7 @@
 		5F8B3CD4235EEC7A00EEBF21 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeVC.swift; sourceTree = "<group>"; };
+		5F949F612417276000C7CDF1 /* CandleStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStick.swift; sourceTree = "<group>"; };
 		5FD56D7923681E0500B07120 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
 		5FD56D7B2368283200B07120 /* MYtest3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYtest3Controller.swift; sourceTree = "<group>"; };
 		5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogetherSwiftUIView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				5F6B41A92410A7840011B9C7 /* GoldView.swift */,
+				5F949F612417276000C7CDF1 /* CandleStick.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F949F622417276000C7CDF1 /* CandleStick.swift in Sources */,
 				5F60FC5C2356EDAA00D4B55E /* WYListDelegate.swift in Sources */,
 				5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */,
 				5F23A6182356F00600BAA763 /* WYNewsView.swift in Sources */,
