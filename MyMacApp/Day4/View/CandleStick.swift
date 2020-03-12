@@ -52,7 +52,8 @@ class CandleStick: NSView {
 			
 			self.open > self.close ? NSColor(red: 44.0/255.0, green: 223.0/255.0, blue: 17.0/255.0, alpha: 1).set() : NSColor(red: 255.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 1).set()
 			
-			let rect1 = NSMakeRect(lineWidth/2, bodyBottom, dirtyRect.width - 3, max(bodyTop - bodyBottom, 3))
+//			let rect1 = NSMakeRect(lineWidth/2, bodyBottom, dirtyRect.width - 3, max(bodyTop - bodyBottom, 3))
+			let rect1 = NSMakeRect(lineWidth/2, bodyBottom, dirtyRect.width - 3, bodyTop - bodyBottom)
 			let bodyPath = NSBezierPath.init(rect: rect1)
 			bodyPath.lineWidth = lineWidth
 			bodyPath.stroke()
