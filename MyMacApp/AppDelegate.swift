@@ -30,6 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		let img = NSImage.init(named: "swiftStatus")
 //		img?.resize(CGSize(width: 200, height: 200))
 //		img?.resizingMode = .stretch
+		img?.size = NSSize(width: 25,height: 30)
 		self.statusItem.button?.image        = img
 		self.statusItem.button?.imageScaling = .scaleAxesIndependently
 		self.statusItem.button?.toolTip      = "你点我试试"

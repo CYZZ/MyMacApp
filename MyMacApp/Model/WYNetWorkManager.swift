@@ -101,6 +101,18 @@ extension WYNetWorkManager {
 		self.request(url, method: .post, params: params, success: success, failure: failure)
 	}
 	
+	func GETJavaScript(url:String,params:[String:Any]?,success:@escaping(_ json:Any)->(),failure:((_ code:Int?,_ message:String)->Void)?) -> Void {
+		AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil, interceptor: nil)
+			.responseString { (response) in
+				switch response.result {
+				case .success(let json):
+					success(json)
+				case .failure(let error):
+					self.failureHandle(failure: failure, stateCode: error.responseCode, message: String(describing: error.errorDescription))
+				}
+		}
+	}
+	
 }
 
 

@@ -39,6 +39,10 @@ class GoldViewController: NSViewController {
 			}
 			self?.goldView.setSilverModel(silverModel)
 		}
+		
+		GoldManager.manager.requestTencentData { (json) in
+			print("获取的腾讯数据json=\(json)")
+		}
 	}
 
 	override func loadView() {

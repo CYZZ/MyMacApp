@@ -32,6 +32,9 @@
 		5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */; };
 		5F8C28BD23602737008068F5 /* MyQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */; };
 		5F949F622417276000C7CDF1 /* CandleStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F949F612417276000C7CDF1 /* CandleStick.swift */; };
+		5FB7060F242AF5C2005AC167 /* FileChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB7060E242AF5C2005AC167 /* FileChangeVC.swift */; };
+		5FB70615242B06D0005AC167 /* NSTextField+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB70612242B06CF005AC167 /* NSTextField+Dragging.m */; };
+		5FB70616242B06D0005AC167 /* NSTextField+Copypast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB70614242B06CF005AC167 /* NSTextField+Copypast.m */; };
 		5FD56D7A23681E0500B07120 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7923681E0500B07120 /* MyContentView.swift */; };
 		5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7B2368283200B07120 /* MYtest3Controller.swift */; };
 		5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */; };
@@ -67,6 +70,12 @@
 		5F8B3CD6235EEC8900EEBF21 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		5F8C28BC23602737008068F5 /* MyQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeVC.swift; sourceTree = "<group>"; };
 		5F949F612417276000C7CDF1 /* CandleStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStick.swift; sourceTree = "<group>"; };
+		5FB7060E242AF5C2005AC167 /* FileChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileChangeVC.swift; sourceTree = "<group>"; };
+		5FB70610242B06CE005AC167 /* MyMacApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMacApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FB70611242B06CF005AC167 /* NSTextField+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Dragging.h"; sourceTree = "<group>"; };
+		5FB70612242B06CF005AC167 /* NSTextField+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Dragging.m"; sourceTree = "<group>"; };
+		5FB70613242B06CF005AC167 /* NSTextField+Copypast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Copypast.h"; sourceTree = "<group>"; };
+		5FB70614242B06CF005AC167 /* NSTextField+Copypast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Copypast.m"; sourceTree = "<group>"; };
 		5FD56D7923681E0500B07120 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
 		5FD56D7B2368283200B07120 /* MYtest3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYtest3Controller.swift; sourceTree = "<group>"; };
 		5FD56D7D2368325C00B07120 /* TogetherSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogetherSwiftUIView.swift; sourceTree = "<group>"; };
@@ -128,6 +137,7 @@
 				5F8C28BA236026FC008068F5 /* Day2 */,
 				5FD56D7523681DB600B07120 /* Day3 */,
 				5F6B419F2410A68B0011B9C7 /* Day4 */,
+				5FB7060A242AF47B005AC167 /* FileChange */,
 				5F16D78D23556A5800CB0BBD /* Main.storyboard */,
 				5F16D79023556A5800CB0BBD /* Info.plist */,
 				5F16D79123556A5800CB0BBD /* MyMacApp.entitlements */,
@@ -237,6 +247,43 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		5FB7060A242AF47B005AC167 /* FileChange */ = {
+			isa = PBXGroup;
+			children = (
+				5FB7060D242AF596005AC167 /* Model */,
+				5FB7060C242AF589005AC167 /* View */,
+				5FB7060B242AF57E005AC167 /* Controller */,
+			);
+			path = FileChange;
+			sourceTree = "<group>";
+		};
+		5FB7060B242AF57E005AC167 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FB7060E242AF5C2005AC167 /* FileChangeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FB7060C242AF589005AC167 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FB7060D242AF596005AC167 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FB70613242B06CF005AC167 /* NSTextField+Copypast.h */,
+				5FB70614242B06CF005AC167 /* NSTextField+Copypast.m */,
+				5FB70611242B06CF005AC167 /* NSTextField+Dragging.h */,
+				5FB70612242B06CF005AC167 /* NSTextField+Dragging.m */,
+				5FB70610242B06CE005AC167 /* MyMacApp-Bridging-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5FD56D7523681DB600B07120 /* Day3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +363,7 @@
 				TargetAttributes = {
 					5F16D78323556A5700CB0BBD = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -396,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB70615242B06D0005AC167 /* NSTextField+Dragging.m in Sources */,
 				5F949F622417276000C7CDF1 /* CandleStick.swift in Sources */,
 				5F60FC5C2356EDAA00D4B55E /* WYListDelegate.swift in Sources */,
 				5F16D78A23556A5700CB0BBD /* ViewController.swift in Sources */,
@@ -404,6 +453,7 @@
 				5F60FC5D2356EDAA00D4B55E /* MyWYNewsController.swift in Sources */,
 				5F6B41A82410A7710011B9C7 /* GoldModel.swift in Sources */,
 				5F6B41A62410A7050011B9C7 /* GoldViewController.swift in Sources */,
+				5FB70616242B06D0005AC167 /* NSTextField+Copypast.m in Sources */,
 				5F6B41AA2410A7840011B9C7 /* GoldView.swift in Sources */,
 				5FD56D7C2368283200B07120 /* MYtest3Controller.swift in Sources */,
 				5F8B3CD7235EEC8900EEBF21 /* TwoViewController.swift in Sources */,
@@ -414,6 +464,7 @@
 				5F23A61A2356F18500BAA763 /* WYNetWorkManager.swift in Sources */,
 				5F5DAE022358719F0065474A /* WYNewsDeitailVC.swift in Sources */,
 				5FD56D7E2368325C00B07120 /* TogetherSwiftUIView.swift in Sources */,
+				5FB7060F242AF5C2005AC167 /* FileChangeVC.swift in Sources */,
 				5FD56D7A23681E0500B07120 /* MyContentView.swift in Sources */,
 				5F5DADFE2358553A0065474A /* WYNewsDetailViewModel.swift in Sources */,
 				5F5DADFC23580F5A0065474A /* WYCellView.swift in Sources */,
@@ -556,6 +607,7 @@
 			baseConfigurationReference = 06F7A00ED452042022D1983C /* Pods-MyMacApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MyMacApp/MyMacApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -567,6 +619,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMacApp/FileChange/Model/MyMacApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -576,6 +630,7 @@
 			baseConfigurationReference = 5BDAB613D1AAF4E6B80A98C9 /* Pods-MyMacApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MyMacApp/MyMacApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -587,6 +642,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MyMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyMacApp/FileChange/Model/MyMacApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

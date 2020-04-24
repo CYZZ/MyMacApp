@@ -66,6 +66,11 @@
                                                 <segue destination="oYi-2X-C5G" kind="show" id="11F-PY-vcP"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="FileChange" keyEquivalent="l" id="R2F-Om-HcI" userLabel="OpenFileChange">
+                                            <connections>
+                                                <segue destination="1aB-RM-PxQ" kind="show" id="ofI-o7-aN9"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                             <connections>
                                                 <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
@@ -703,6 +708,178 @@
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-104" y="419"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="CO0-5c-skv">
+            <objects>
+                <windowController id="1aB-RM-PxQ" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="As2-H2-ICI">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="-1626" y="133" width="570" height="358"/>
+                        <rect key="screenRect" x="-1920" y="-180" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="1aB-RM-PxQ" id="B2o-2X-6Q1"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="2LD-9m-c62" kind="relationship" relationship="window.shadowedContentViewController" id="lOY-ry-xKa"/>
+                    </connections>
+                </windowController>
+                <customObject id="egi-Ud-YxT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="50"/>
+        </scene>
+        <!--File ChangeVC-->
+        <scene sceneID="ZoK-ze-vrF">
+            <objects>
+                <viewController id="2LD-9m-c62" customClass="FileChangeVC" customModule="MyMacApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FA7-lr-fhu">
+                        <rect key="frame" x="0.0" y="0.0" width="666" height="364"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-ho-TSW">
+                                <rect key="frame" x="18" y="328" width="124" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="需要修改的单个路径" id="sWC-vY-re4">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2wi-Jq-8g6">
+                                <rect key="frame" x="160" y="326" width="288" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="单个文件或文件夹" drawsBackground="YES" id="h07-ap-CRC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WNU-ci-hnO">
+                                <rect key="frame" x="18" y="292" width="58" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="创建时间" id="Lq5-PA-adv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HyE-NW-wO7">
+                                <rect key="frame" x="18" y="235" width="84" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="最后修改时间" id="L5i-BG-Y8I">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-gm-tb1">
+                                <rect key="frame" x="20" y="261" width="333" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="创建时间" drawsBackground="YES" id="QiP-uP-OYn">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eda-xI-pXl">
+                                <rect key="frame" x="20" y="204" width="333" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="修改时间" drawsBackground="YES" id="mlk-Iw-b3I">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wvp-7f-wue">
+                                <rect key="frame" x="21" y="178" width="84" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="最后打开时间" id="u1p-zh-AA6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5mj-bU-keU">
+                                <rect key="frame" x="20" y="147" width="334" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="最后打开时间" drawsBackground="YES" id="pmb-0i-PZ3">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U07-WC-cXJ">
+                                <rect key="frame" x="14" y="13" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="确定修改" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xuk-yt-mfO">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="changeButtonClick:" target="2LD-9m-c62" id="qHv-16-4vI"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QlR-xR-pfs">
+                                <rect key="frame" x="585" y="13" width="67" height="32"/>
+                                <buttonCell key="cell" type="push" title="读取" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hij-nz-QPp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="readFIleButtonClick:" target="2LD-9m-c62" id="FIp-yE-Ad6"/>
+                                </connections>
+                            </button>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-9j-6dE">
+                                <rect key="frame" x="456" y="323" width="203" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="i6P-6F-8Nl"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="tAH-f1-nR1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>单个文件或文件夹</string>
+                                        <string>文件夹下一级子文件</string>
+                                        <string>文件夹下的所有文件</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wvp-7f-wue" firstAttribute="top" secondItem="eda-xI-pXl" secondAttribute="bottom" constant="10" id="3Dt-gO-Ihh"/>
+                            <constraint firstItem="WNU-ci-hnO" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="7gX-99-YOW"/>
+                            <constraint firstItem="eda-xI-pXl" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="EDV-Er-ntX"/>
+                            <constraint firstItem="eda-xI-pXl" firstAttribute="top" secondItem="HyE-NW-wO7" secondAttribute="bottom" constant="10" id="GJI-7E-p5K"/>
+                            <constraint firstItem="5mj-bU-keU" firstAttribute="width" secondItem="DMP-gm-tb1" secondAttribute="width" multiplier="1.00326" id="GUY-C7-oZ5"/>
+                            <constraint firstItem="eda-xI-pXl" firstAttribute="width" secondItem="DMP-gm-tb1" secondAttribute="width" id="Kiq-xK-ugY"/>
+                            <constraint firstItem="ZZd-ho-TSW" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="LYm-ZP-oju"/>
+                            <constraint firstAttribute="bottom" secondItem="U07-WC-cXJ" secondAttribute="bottom" constant="20" id="M2z-Zv-XzY"/>
+                            <constraint firstItem="2wi-Jq-8g6" firstAttribute="centerY" secondItem="ZZd-ho-TSW" secondAttribute="centerY" id="N6v-Z7-AHn"/>
+                            <constraint firstItem="DMP-gm-tb1" firstAttribute="width" secondItem="FA7-lr-fhu" secondAttribute="width" multiplier="0.5" id="Nre-zZ-pOV"/>
+                            <constraint firstItem="b7w-9j-6dE" firstAttribute="leading" secondItem="2wi-Jq-8g6" secondAttribute="trailing" constant="8" id="Sja-uC-AMO"/>
+                            <constraint firstItem="DMP-gm-tb1" firstAttribute="top" secondItem="WNU-ci-hnO" secondAttribute="bottom" constant="10" id="VWH-Xv-MqU"/>
+                            <constraint firstAttribute="trailing" secondItem="b7w-9j-6dE" secondAttribute="trailing" constant="10" id="Xmx-BT-1Mq"/>
+                            <constraint firstItem="ZZd-ho-TSW" firstAttribute="top" secondItem="FA7-lr-fhu" secondAttribute="top" constant="20" id="Zdr-Ql-oY9"/>
+                            <constraint firstItem="5mj-bU-keU" firstAttribute="top" secondItem="Wvp-7f-wue" secondAttribute="bottom" constant="10" id="dhu-TB-P31"/>
+                            <constraint firstItem="WNU-ci-hnO" firstAttribute="top" secondItem="ZZd-ho-TSW" secondAttribute="bottom" constant="20" id="fg2-97-hII"/>
+                            <constraint firstAttribute="trailing" secondItem="QlR-xR-pfs" secondAttribute="trailing" constant="20" id="hMJ-mL-d7R"/>
+                            <constraint firstAttribute="bottom" secondItem="QlR-xR-pfs" secondAttribute="bottom" constant="20" id="iWc-JH-CZA"/>
+                            <constraint firstItem="Wvp-7f-wue" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="23" id="ilX-Pl-6XD"/>
+                            <constraint firstItem="HyE-NW-wO7" firstAttribute="top" secondItem="DMP-gm-tb1" secondAttribute="bottom" constant="10" id="j2V-Tw-2Nj"/>
+                            <constraint firstItem="DMP-gm-tb1" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="jPB-lc-lD0"/>
+                            <constraint firstItem="2wi-Jq-8g6" firstAttribute="leading" secondItem="ZZd-ho-TSW" secondAttribute="trailing" constant="20" id="mzc-oB-Tf0"/>
+                            <constraint firstItem="5mj-bU-keU" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="nGh-LC-tyJ"/>
+                            <constraint firstItem="HyE-NW-wO7" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="nnQ-vb-tlt"/>
+                            <constraint firstItem="b7w-9j-6dE" firstAttribute="centerY" secondItem="2wi-Jq-8g6" secondAttribute="centerY" id="qN8-vt-if6"/>
+                            <constraint firstItem="U07-WC-cXJ" firstAttribute="leading" secondItem="FA7-lr-fhu" secondAttribute="leading" constant="20" id="swH-FC-ypm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeTimeTextField" destination="eda-xI-pXl" id="avu-cn-g66"/>
+                        <outlet property="createTimeTextField" destination="DMP-gm-tb1" id="bxb-Gl-EL8"/>
+                        <outlet property="lastOpenTextField" destination="5mj-bU-keU" id="yBy-T2-KlB"/>
+                        <outlet property="selectComboBox" destination="b7w-9j-6dE" id="Fce-gc-YFd"/>
+                        <outlet property="singleTextFiled" destination="2wi-Jq-8g6" id="dLK-nu-pwj"/>
+                        <outlet property="timeShowLabel" destination="WNU-ci-hnO" id="zB7-5d-vzZ"/>
+                    </connections>
+                </viewController>
+                <customObject id="JnV-4k-9l0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="47"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="zco-KE-nui">
